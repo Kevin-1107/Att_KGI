@@ -232,7 +232,7 @@ def main():
     parser.add_argument('--num_heads', type=int, default=4, help='Number of attention heads')
     parser.add_argument('--att_dropout', type=float, default=0.2, help='Attention dropout rate')
     parser.add_argument('--mlp_dropout', type=float, default=0.3, help='MLP internal dropout')
-    parser.add_argument('--accumulation_steps', type=int, default=2, help='Gradient accumulation steps')
+    parser.add_argument('--accumulation_steps', type=int, default=4, help='Gradient accumulation steps')
     parser.add_argument('--use_attention', action='store_false', help='Enable attention mechanism in GIN')
     parser.add_argument('--residual_type', type=str, default="auto", help='Residual connection type: auto/gate/add')
     args = parser.parse_args()
